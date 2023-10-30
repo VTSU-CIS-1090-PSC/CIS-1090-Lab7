@@ -1,18 +1,7 @@
 const dictionary = require('./dictionary-long.js');
 
 function binarySearch(needle, haystack) {
-    start = 0;
-    end = haystack.length - 1;
-    while ( start <= end ){
-        pos = Math.floor( (start + end) / 2 );
-        word = haystack[pos];
-        if (word == needle)
-            return true;
-        else if ( word < needle )
-            start = pos + 1;
-        else if ( word > needle )
-            end = pos - 1;
-    }
+    //TODO Add your code here
     return false;
 }
 
